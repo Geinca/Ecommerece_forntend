@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+section>.head{
+    height: 100%;
+    width: 40%;
+}
+
+section>.head>.h1{
+    width: 100%;
+    font-size: 4em;
+    color: rgb(88, 75, 0);
+    margin-top: 70px;
+    margin-left: 80px;
+    text-shadow: 1px 1px 2px #000;
+}
+section>.head>hr{
+    width: 100%;
+    margin-bottom: 20px;
+}
+section .image{
+    height: 80%;
+    width: 55%;
+}
+section .image img{
+    height: 80%;
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3);
+
+}
+section>.image>video{
+    height: 45%;
+    width: 50%;
+    margin-top: -250px;
+    padding-bottom: 18px;
+    margin-left: 230px;
+    border-radius: 30px;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+section>.text{
+    width: 40%;
+    margin-top: 20px;
+}
+section>.text>h4{
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.brands-list {  
+    display: grid;
+    /* grid-row: span; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    width: 80%;
+    margin-left: 10%; 
+    margin-top: 50px;
+}
+
+.brand-card {
+    height: 100%;
+    width: 100% ; 
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    height: 100%;
+    
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.brand-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+}
+.brand-card img {
+    width: 50%;
+    height: 70%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.brand-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.brand-price {
+    font-size: 18px;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 4rem;
+    text-align: center;
+    background-color: #9e6e00;
+    color: rgb(30, 30, 30);
+    text-shadow: 1px 1px 2px #000;
+}
+
+
+.navbar2 {
+    height: 60px;
+    width: 100%;
+    background-color: #3c3c3c;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar2>a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-item .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    top: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 15px;
+    color: black;
+}
+
+.nav-item .dropdown-content .dropdown-column {
+    margin-bottom: 15px;
+}
+
+.nav-item .dropdown-content a {
+    color: #333;
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.nav-item .dropdown-content a:hover {
+    color: #800080;
+}
+
+.nav-item:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dropdown-content .dropdown-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: flex;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding-left: 20px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .search-container input {
+        padding: 10px;
+        padding-left: 30px;
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .select {
+        width: 80%;
+    }
+
+    .icon {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .icon div {
+        width: auto;
+    }
+
+    .navbar svg {
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 20px;
+    }
+
+    section>.head {
+        width: 90%;
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    section>.head>.h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    section>.head>hr {
+        width: 60%;
+        margin-left: 120px;
+    }
+
+    section .image {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    section .image img {
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+
+    section>.image>video {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    section>.text>h4 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+    }
+
+    section>.head>.h1 {
+        font-size: 2.5em;
+    }
+
+    section>.image img {
+        width: 90%;
+        height: 70%;
+        margin: 0;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    section>.image>video {
+        width: 50%;
+        height: auto;
+        margin-left: 150px;
+        margin-top: -185px;
+    }
+
+    section>.text>h4 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section>.head>.h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    section>.text>h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .brands-list {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+        gap: 20px;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .brand-card img {
+        width: 70%;
+    }
+
+    .brand-title {
+        font-size: 15px;
+    }
+
+    .brand-price {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .brands-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet screens */
+        gap: 15px;
+        width: 65%;
+        margin: 30px auto;
+    }
+
+    .brand-card img {
+        width: 65%;
+    }
+
+    .brand-title {
+        font-size: 14px;
+    }
+
+    .brand-price {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brands-list {
+        grid-template-columns: 1fr; /* One column on mobile screens */
+        gap: 10px;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .brand-card {
+        padding: 10px;
+    }
+
+    .brand-card img {
+        width: 90%;
+    }
+
+    .brand-title {
+        font-size: 13px;
+    }
+
+    .brand-price {
+        font-size: 14px;
+    }
+}
