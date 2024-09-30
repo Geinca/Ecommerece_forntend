@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./womenethenic.css">
+</head>
+<body>
+    <special-header1></special-header1>
+
+       <special-header2></special-header2>
+
+
+    <section class="products-section">
+        <!-- Filter and Sort Section -->
+        <div class="filters">
+            <div class="sort-by">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="relevance">Relevance</option>
+                    <option value="low-to-high">Price: Low to High</option>
+                    <option value="high-to-low">Price: High to Low</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+
+            <div class="filter-category">
+                <h3>Filters</h3>
+                <p>1000+ Products</p>
+                <div class="category">
+                    <h4>Category</h4>
+                    <hr>
+                    <input type="search" id="categorySearch" placeholder="Search">
+                    <ul id="categoryList">
+                        <li><input type="checkbox" id="womenTshirts"> Women T-shirts</li>
+                        <li><input type="checkbox" id="womenTops"> Women Tops and Tunics</li>
+                        <li><input type="checkbox" id="watches"> Analog Watches</li>
+                        <li><input type="checkbox" id="bracelets"> Bangles & Bracelets</li>
+                        <li><input type="checkbox" id="bedsheets"> Bedsheets</li>
+                        <li><input type="checkbox" id="bikeCovers"> Bike Covers</li>
+                        <li><input type="checkbox" id="blouses"> Blouses</li>
+                        <li><input type="checkbox" id="dresses"> Dresses</li>
+                        <li><input type="checkbox" id="earrings"> Earrings & Studs</li>
+                        <li><input type="checkbox" id="flipflops"> Flipflops & Slippers</li>
+                        <li><input type="checkbox" id="gowns"> Gowns</li>
+                    </ul>
+                </div>
+
+                <!-- Gender filter -->
+                <div class="gender-filter">
+                    <h4>Gender</h4>
+                    <hr>
+                    <ul>
+                        <li><input type="checkbox" id="male"> Male</li>
+                        <li><input type="checkbox" id="female"> Female</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products List -->
+        <div class="products-list">
+            <div class="product-card">
+                <img src="extension-board.jpg" alt="Extension Board">
+                <p class="product-title">Useful Extension Boards</p>
+                <p class="product-price">₹144</p>
+                <p class="free-delivery">Free Delivery</p>
+                <div class="reviews">
+                    <span class="rating">3.7 ★</span>
+                    <span>106857 Reviews</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="pants.jpg" alt="Pants">
+                <p class="product-title">Fashionable Glamorous Pants</p>
+                <p class="product-price">₹195</p>
+                <p class="free-delivery">Free Delivery</p>
+                <div class="reviews">
+                    <span class="rating">3.9 ★</span>
+                    <span>35472 Reviews</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="shower-head.jpg" alt="Shower Head">
+                <p class="product-title">Classy Head Showers (With Swivel)</p>
+                <p class="product-price">₹96</p>
+                <p class="free-delivery">Free Delivery</p>
+                <div class="reviews">
+                    <span class="rating">3.8 ★</span>
+                    <span>60972 Reviews</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="fashionista-pants.jpg" alt="Women Pants">
+                <p class="product-title">Fancy Fashionista Women Pants</p>
+                <p class="product-price">₹283</p>
+                <p class="free-delivery">Free Delivery</p>
+                <div class="reviews">
+                    <span class="rating">3.7 ★</span>
+                    <span>17562 Reviews</span>
+                </div>
+            </div>
+
+       
+
+
+        </div>
+    </section>
+
+
+    <special-footer></special-footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

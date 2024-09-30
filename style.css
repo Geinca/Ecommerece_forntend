@@ -327,16 +327,16 @@ section{
     margin-bottom: 10px;
 }
 
-.item p {
+.item>a{
     font-size: 1.2rem;
     color: #333;
+    text-decoration: none;
 }
 
 
 .essentials-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
     padding: 20px;
     background-color: #f4f4ff;
     border-radius: 10px;
@@ -348,15 +348,32 @@ section{
 
 .essentials-header {
     display: flex;
-    justify-content: space-between;
+    height: 80%;
+    width: 30%;
+    /* background-color: #007bff; */
     align-items: center;
-    width: 100%;
+    padding: 10px;
+    margin: 40px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-decoration: none;
+    /* width: 100%; */
 }
 
+.essentials-header:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+}
+.essentials-header>img{
+    width: 50%;
+    height: 40%;
+}
 .essentials-header h1 {
     font-size: 3rem;
     color: #585000;
-    margin-left: 40%;
     text-shadow: 1px 1px 2px #000;
 }
 
@@ -374,12 +391,24 @@ button {
 button:hover {
     background-color: rgb(192, 164, 8);
 }
+button>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
 
+}
+.main-essentials{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .essentials-categories {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 20px;
-    width: 100%;
+    width: 70%;
 }
 
 .category {
@@ -389,12 +418,13 @@ button:hover {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     height: 200px;
     display: flex;
+    gap: 10;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .category:hover{
-    transition: scale(1.2rem);
+    transform: scale(1.02);
 }
 .category img {
     width: 100px;
@@ -407,21 +437,20 @@ button:hover {
 }
 
 .category button {
+    height: 30%;
+    width: 80%;
     font-size: 1.2rem;
     color: #fffefe;
     /* margin-left: -130px; */
 }
 
-#hidden-products {
-    display: none;
-    margin-top: 30px;
-    width: 100%;
-}
 
 .products-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
     gap: 20px;
+    width: 70%;
+    margin-top: 100%;
 }
 
 .product {
@@ -435,7 +464,9 @@ button:hover {
     align-items: center;
     justify-content: center;
 }
-
+.product:hover{
+    transform: scale(1.03);
+}
 .product img {
     width: 100px;
     height: 100px;
@@ -443,6 +474,8 @@ button:hover {
     border-radius: 8px;
 }
 .product button {
+    height: 30%;
+    width: 80%;
     font-size: 1.2rem;
     color: #ffffff;
 }
@@ -557,7 +590,7 @@ button:hover {
 
 .gender-filter{
     /* margin-left: 35px; */
-    margin-top: 270px;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -638,18 +671,64 @@ button:hover {
     font-weight: bold;
 }
 
-.footer{
-    height: 50%;
-    width: 100%;
+footer{
+    height: 100%;
+    width: 98vw;
     margin-top: 50%;
-    background-color: #bebebe;
-    display: flex;
-    padding: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    /* list-style: none; */
+    background-color:rgb(245, 247, 247);
 }
-
+footer>.main{
+    display: flex;
+    justify-content:space-around ;
+    color: rgb(152, 151, 151);
+    margin-left:210px ;
+    margin-right: 210px;
+}
+.footer>ul{
+    list-style: none;
+    padding: 20px;
+}
+.footer>ul>li{
+   
+    margin-bottom: 12px;
+    font-size: 12px;
+     
+}
+.footer>ul>li>h5{
+    font-size: 14px;
+    color: grey;
+    font-weight: 600;
+}
+hr{
+    width: 80%;
+    margin-top: 10px;
+   margin-left:10%;
+}
+.f-line>p{
+    margin-left: 465px;
+    font-size: 0.8em;
+    color: rgb(148, 148, 148);
+   
+}
+.footer-menu>ol{
+  list-style: none;
+  margin-left:250px ;
+  margin-right: 150px;
+  font-size: 0.8em;
+  color: rgb(148, 148, 148);
+}
+.footer-menu>ol>li{
+    display: inline;
+    padding-left: 30px;
+}
+.footer-menu{
+    margin-left: 10px;
+}
+.paragraph{
+    margin-left:210px ;
+    margin-right: 210px;
+    font-size: 0.9em;
+}
 
 
 
