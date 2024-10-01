@@ -28,14 +28,14 @@
 }
 .navbar>.logo>h1{
     color: rgb(92, 92, 0);
-    font-size: 30px;
+    font-size: 33px;
     width: 10%;
+    margin-top: 10px;
     margin-left: 10px;
 }
 .navbar>svg{
     width: 20px;
     height: 20px;
-    margin-left: 80px;
 }
 .navbar>input{
     width: 30%;
@@ -60,7 +60,7 @@
     border:none;
 }
 .navbar>.icon{
-    width: 10%;
+    width: 20%;
     height: 60%;
     display: flex;
     align-items: center;
@@ -73,6 +73,24 @@
     flex-direction: column;
     align-items: center;
     color: rgb(73, 73, 73);
+}
+.navbar>.icon>.sign{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.navbar>.icon>.sign>a{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+.navbar>.icon>.sign>a:hover{
+    cursor: pointer;
 }
 .navbar2 {
     height: 60px;

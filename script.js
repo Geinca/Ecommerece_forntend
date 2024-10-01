@@ -326,6 +326,11 @@ class SpecialHeader1 extends HTMLElement{
                     </svg>
                     <h6>Profile</h6>
                 </div>
+                <div class="sign">
+                    <a href="./signup.html">Sign up</a>
+                    <a href="./signin.html">Sign in</a>
+                   
+                </div>
             </div>
         </nav>
         `
