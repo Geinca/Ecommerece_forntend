@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./womenethenic.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
 </head>
 <body>
-
-    <special-header1></special-header1>
-
-    <special-header2></special-header2>
+  
+    <header1></header1>
 
     <section class="products-section">
         <!-- Filter and Sort Section -->
@@ -112,7 +117,7 @@
     </section>
 
 
-    <special-footer></special-footer>
+    <footer></footer>
     
     <script src="./script.js"></script>
 </body>
