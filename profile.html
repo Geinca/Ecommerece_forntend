@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - E-Commerce</title>
+    <link rel="stylesheet" href="./profile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
+</head>
+<body>
+  
+    <header1></header1>
+
+    <!-- Profile Container -->
+    <div class="profile-container">
+        <!-- Sidebar for Profile Navigation -->
+        <div class="sidebar">
+            <h2>User Profile</h2>
+            <ul>
+                <li><a href="#personal-info">Personal Information</a></li>
+                <li><a href="#order-history">Order History</a></li>
+                <li><a href="#account-settings">Account Settings</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="profile-content">
+            <!-- Personal Information Section -->
+            <section id="personal-info">
+                <h2>Personal Information</h2>
+                <div class="profile-details">
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Phone:</strong> +1 234 567 8901</p>
+                    <p><strong>Address:</strong> 1234 Main St, Anytown, USA</p>
+                </div>
+                <button class="edit-btn">Edit Information</button>
+            </section>
+
+            <!-- Order History Section -->
+            <section id="order-history">
+                <h2>Order History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#123456</td>
+                            <td>2024-01-15</td>
+                            <td>3 Items</td>
+                            <td>Delivered</td>
+                            <td>$120.00</td>
+                        </tr>
+                        <tr>
+                            <td>#123457</td>
+                            <td>2024-02-10</td>
+                            <td>1 Item</td>
+                            <td>Shipped</td>
+                            <td>$60.00</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Account Settings Section -->
+            <section id="account-settings">
+                <h2>Account Settings</h2>
+                <p>Change your password, update your notification preferences, and more.</p>
+                <button class="settings-btn">Go to Settings</button>
+            </section>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+</html>
+
