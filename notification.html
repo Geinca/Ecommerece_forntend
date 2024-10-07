@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="./notification.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
+  </head>
+  <body>
+  
+    <header1></header1>
+      
+    <div class="notifications-container">
+        <h1>Notifications</h1>
+
+        <!-- Notification for Orders -->
+        <div class="notification order">
+            <h2>Order Update</h2>
+            <p>Your order <strong>#123456</strong> has been shipped. <a href="#">Track your order</a>.</p>
+            <span class="notification-date">October 2, 2024</span>
+        </div>
+
+        <!-- Notification for Offers -->
+        <div class="notification offer">
+            <h2>Special Offer!</h2>
+            <p>Get 20% off your next purchase with code <strong>OFF20</strong>. Valid until October 15, 2024.</p>
+            <span class="notification-date">October 1, 2024</span>
+        </div>
+
+        <!-- Notification for Promotions -->
+        <div class="notification promotion">
+            <h2>Exclusive Promotion</h2>
+            <p>Join our membership program and earn double rewards points for every purchase. <a href="#">Learn more</a>.</p>
+            <span class="notification-date">September 29, 2024</span>
+        </div>
+
+        <!-- Notification for Miscellaneous -->
+        <div class="notification general">
+            <h2>New Features Available</h2>
+            <p>Check out the new features we’ve added to enhance your shopping experience. <a href="#">Explore now</a>.</p>
+            <span class="notification-date">September 25, 2024</span>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>

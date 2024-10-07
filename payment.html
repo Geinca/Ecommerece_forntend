@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="./payment.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
+  </head>
+  <body>
+  
+    <header1></header1>
+    <div class="payment-container">
+        <h1>Select Your Payment Method</h1>
+
+
+        
+
+        <!-- Payment Options Section -->
+        <div class="payment-options">
+            <!-- Credit/Debit Card -->
+            <div class="payment-option">
+                <input type="radio" id="credit-card" name="payment-method" checked>
+                <label for="credit-card">
+                    <img src="credit-card.png" alt="Credit/Debit Card"> Credit/Debit Card
+                </label>
+                <div class="payment-form" id="credit-card-form">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9101 1121">
+                    
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY">
+                    
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123">
+                    
+                    <label for="name-on-card">Name on Card</label>
+                    <input type="text" id="name-on-card" placeholder="John Doe">
+                </div>
+            </div>
+
+            <!-- PayPal -->
+            <div class="payment-option">
+                <input type="radio" id="paypal" name="payment-method">
+                <label for="paypal">
+                    <img src="paypal.png" alt="PayPal"> cash on delivery
+                </label>
+                <div class="payment-form" id="paypal-form">
+                    <p>After clicking "Proceed to Payment", you will be redirected to PayPal to complete your purchase.</p>
+                </div>
+            </div>
+
+            <!-- Net Banking -->
+            <div class="payment-option">
+                <input type="radio" id="net-banking" name="payment-method">
+                <label for="net-banking">
+                    <img src="bank.png" alt="Net Banking"> Net Banking
+                </label>
+                <div class="payment-form" id="net-banking-form">
+                    <label for="bank-selection">Select Your Bank</label>
+                    <select id="bank-selection">
+                        <option value="bank1">Bank of America</option>
+                        <option value="bank2">Chase</option>
+                        <option value="bank3">Wells Fargo</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Payment Button -->
+            <button class="payment-button">Proceed to Payment</button>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script>
+        // Show corresponding payment form when a payment method is selected
+        document.querySelectorAll('input[name="payment-method"]').forEach((radio) => {
+            radio.addEventListener('change', function() {
+                document.querySelectorAll('.payment-form').forEach(form => form.style.display = 'none');
+                if (this.checked) {
+                    document.getElementById(this.id + '-form').style.display = 'block';
+                }
+            });
+        });
+
+        // Initialize first form visibility
+        document.getElementById('credit-card-form').style.display = 'block';
+    </script>
+</body>
+</html>

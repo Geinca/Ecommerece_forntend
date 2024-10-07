@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    height: 100vh;
+}
+
+/* Track Order Container */
+.track-order-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 5% auto;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading Styles */
+.track-order-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Track Order Form */
+.track-order-form {
+    margin-bottom: 30px;
+}
+
+.track-order-form p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.track-order-form input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.track-order-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.track-order-form button:hover {
+    background-color: #555;
+}
+
+/* Shipping Details */
+.shipping-details {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.shipping-details h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shipping-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.shipping-details span {
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+footer{
+    height: 100%;
+    width: 95vw;
+    margin-left: 30px;
+    background-color:rgb(245, 247, 247);
+}
+footer>.main{
+    display: flex;
+    justify-content:space-around ;
+    color: rgb(152, 151, 151);
+    margin-left:210px ;
+    margin-right: 210px;
+}
+.footer>ul{
+    list-style: none;
+    padding: 20px;
+}
+.footer>ul>li{
+   
+    margin-bottom: 12px;
+    font-size: 12px;
+     
+}
+.footer>ul>li>h5{
+    font-size: 14px;
+    color: grey;
+    font-weight: 600;
+}
+hr{
+    width: 80%;
+    margin-top: 10px;
+   margin-left:10%;
+}
+.f-line>p{
+    margin-left: 465px;
+    font-size: 0.8em;
+    color: rgb(148, 148, 148);
+   
+}
+.footer-menu>ol{
+  list-style: none;
+  margin-left:250px ;
+  margin-right: 150px;
+  font-size: 0.8em;
+  color: rgb(148, 148, 148);
+}
+.footer-menu>ol>li{
+    display: inline;
+    padding-left: 30px;
+}
+.footer-menu{
+    margin-left: 10px;
+}
+.paragraph{
+    margin-left:210px ;
+    margin-right: 210px;
+    font-size: 0.9em;
+}

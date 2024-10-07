@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 20px;
     justify-content: space-evenly;
 }
 .navbar>.logo{
@@ -61,10 +61,11 @@
     border:none;
 }
 .navbar>.icon{
-    width: 20%;
+    width: 27%;
     height: 60%;
     display: flex;
     align-items: center;
+    margin-left: -80px;
     justify-content: space-evenly;
 }
 .navbar>.icon>div {
@@ -87,14 +88,17 @@
     width: 100%;
     height: 100%;
     display: flex;
+    margin-left: 10px;
     justify-content: space-evenly;
     flex-direction: row;
+
 }
 .navbar>.icon>.sign>a{
     width: 50%;
     height: 100%;
     text-align: center;
     margin-top: 20px;
+    margin-left: 3px;
     color: rgb(73, 73, 73);
     text-decoration: none;
 }

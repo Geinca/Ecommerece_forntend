@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Address</title>
+    <link rel="stylesheet" href="./address.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
+</head>
+<body>
+  
+    <header1></header1>
+    <div class="address-container">
+        <h1>Manage Addresses</h1>
+
+        <!-- Add New Address Section -->
+        <div class="add-address">
+            <h2>Add New Address</h2>
+            <form id="add-address-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="address" placeholder="1234 Main St" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="San Francisco" required>
+
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="California" required>
+
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" placeholder="94101" required>
+
+                <button type="submit" class="submit-btn"><a href="./buy.html">Add Address</a></button>
+            </form>
+        </div>
+
+        <!-- Edit Existing Address Section -->
+        <div class="edit-address">
+            <h2>Edit Address</h2>
+            <form id="edit-address-form">
+                <label for="edit-name">Full Name</label>
+                <input type="text" id="edit-name" name="name" placeholder="John Doe" required>
+
+                <label for="edit-phone">Phone Number</label>
+                <input type="tel" id="edit-phone" name="phone" placeholder="123-456-7890" required>
+
+                <label for="edit-address">Street Address</label>
+                <input type="text" id="edit-address" name="address" placeholder="1234 Main St" required>
+
+                <label for="edit-city">City</label>
+                <input type="text" id="edit-city" name="city" placeholder="San Francisco" required>
+
+                <label for="edit-state">State</label>
+                <input type="text" id="edit-state" name="state" placeholder="California" required>
+
+                <label for="edit-zip">Zip Code</label>
+                <input type="text" id="edit-zip" name="zip" placeholder="94101" required>
+
+                <button type="submit" class="submit-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>

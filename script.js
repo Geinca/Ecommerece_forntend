@@ -58,89 +58,7 @@ sortSelect.addEventListener('change', function() {
     }
 });
 
-    // function sortProductsByPrice(order) {
-    //     const products = Array.from(document.querySelectorAll('.product-card'));
-    //     const sortedProducts = products.sort((a, b) => {
-    //         const priceA = parseInt(a.querySelector('.product-price').textContent.replace('₹', ''));
-    //         const priceB = parseInt(b.querySelector('.product-price').textContent.replace('₹', ''));
-    //         return order === 'asc' ? priceA - priceB : priceB - priceA;
-    //     });
-    //     updateProductsList(sortedProducts);
-    // }
-
-    // function sortProductsByRating() {
-    //     const products = Array.from(document.querySelectorAll('.product-card'));
-    //     const sortedProducts = products.sort((a, b) => {
-    //         const ratingA = parseFloat(a.querySelector('.rating').textContent);
-    //         const ratingB = parseFloat(b.querySelector('.rating').textContent);
-    //         return ratingB - ratingA;
-    //     });
-    //     updateProductsList(sortedProducts);
-    // }
-
-    // function resetSorting() {
-    //     const products = Array.from(document.querySelectorAll('.product-card'));
-    //     const originalOrder = products.sort((a, b) => a.dataset.index - b.dataset.index);
-    //     updateProductsList(originalOrder);
-    // }
-
-    // function updateProductsList(sortedProducts) {
-    //     const productsList = document.querySelector('.products-list');
-    //     productsList.innerHTML = ''; // Clear the current list
-    //     sortedProducts.forEach(product => productsList.appendChild(product)); // Append sorted products
-    // }
-// document.addEventListener('DOMContentLoaded', () => {
-//     const stars = document.querySelectorAll('.star');
-//     const ratingInput = document.getElementById('rating');
-
-//     // Handle star click event
-//     stars.forEach((star, index) => {
-//         star.addEventListener('click', () => {
-//             // Set the rating value
-//             const ratingValue = star.getAttribute('data-value');
-//             ratingInput.value = ratingValue;
-
-//             // Highlight the stars up to the clicked one
-//             stars.forEach((s, i) => {
-//                 if (i < index + 1) {
-//                     s.classList.add('active');
-//                 } else {
-//                     s.classList.remove('active');
-//                 }
-//             });
-//         });
-//     });
-
-//     // Handle form submission
-//     document.getElementById('feedbackForm').addEventListener('submit', function(e) {
-//         e.preventDefault();
-
-//         // Ensure rating is selected
-//         if (!ratingInput.value) {
-//             alert("Please select a star rating.");
-//             return;
-//         }
-
-//         // Get form values
-//         const name = document.getElementById('name').value;
-//         const rating = ratingInput.value;
-//         const comments = document.getElementById('comments').value;
-
-//         // Create feedback item
-//         const feedbackItem = document.createElement('li');
-//         feedbackItem.innerHTML = `<strong>${name}</strong> rated it <strong>${rating}</strong>/5 stars<br>${comments}`;
-
-//         // Add feedback item to the list
-//         document.getElementById('feedbackItems').appendChild(feedbackItem);
-
-//         // Clear form fields
-//         document.getElementById('feedbackForm').reset();
-//         stars.forEach(star => star.classList.remove('active')); // Reset stars
-//     });
-// });
-
-
-
+    
 const card =document.getElementsByClassName('product-card')
 card[0].addEventListener("click",function(){
     console.log("card clicked")
@@ -156,6 +74,6 @@ btn[0].addEventListener("click",function(){
 const btn1 =document.getElementsByClassName('buy-now')
 btn1[0].addEventListener("click",function(){
     console.log("btn clicked")
-    window.location.assign("./buy.html")
+    window.location.assign("./address.html")
 
 })

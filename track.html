@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order</title>
+    <link rel="stylesheet" href="./track.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
+  </head>
+  <body>
+  
+    <header1></header1>
+    <!-- Track Order Container -->
+    <div class="track-order-container">
+        <h1>Track Your Order</h1>
+
+        <!-- Order Tracking Form -->
+        <div class="track-order-form">
+            <p>Enter your order ID to track the status of your order.</p>
+            <input type="text" id="orderId" placeholder="Enter your Order ID">
+            <button class="track-btn" onclick="trackOrder()">Track Order</button>
+        </div>
+
+        <!-- Shipping Details -->
+        <div class="shipping-details" id="shippingDetails">
+            <h2>Shipping Details</h2>
+            <p><strong>Order ID:</strong> <span id="orderIDDisplay">#123456</span></p>
+            <p><strong>Shipping Status:</strong> <span id="orderStatus">In Transit</span></p>
+            <p><strong>Expected Delivery Date:</strong> <span id="deliveryDate">February 15, 2024</span></p>
+            <p><strong>Shipping Address:</strong> <span id="shippingAddress">1234 Main St, Anytown, USA</span></p>
+        </div>
+    </div>
+    <footer></footer>
+    <script>
+        function trackOrder() {
+            // In a real application, this function would fetch data from an API
+            const orderId = document.getElementById('orderId').value;
+            if (orderId) {
+                document.getElementById('shippingDetails').style.display = 'block';
+                document.getElementById('orderIDDisplay').textContent = orderId;
+                // Simulate fetching order status and details
+                // Replace with real data in a live scenario
+                document.getElementById('orderStatus').textContent = 'In Transit';
+                document.getElementById('deliveryDate').textContent = 'February 15, 2024';
+                document.getElementById('shippingAddress').textContent = '1234 Main St, Anytown, USA';
+            } else {
+                alert("Please enter a valid Order ID.");
+            }
+        }
+    </script>
+</body>
+</html>

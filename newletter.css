@@ -1,0 +1,172 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Newsletter Container */
+.newsletter-container {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 5% auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.newsletter-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.newsletter-container p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Subscribe Button */
+.subscribe-btn {
+    padding: 12px 25px;
+    background-color: #575103;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #575103;
+
+}
+
+/* Privacy Note */
+.privacy-note {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 20px;
+}
+
+
+footer{
+    height: 100%;
+    width: 95vw;
+    margin-left: 30px;
+    background-color:rgb(245, 247, 247);
+}
+footer>.main{
+    display: flex;
+    justify-content:space-around ;
+    color: rgb(152, 151, 151);
+    margin-left:210px ;
+    margin-right: 210px;
+}
+.footer>ul{
+    list-style: none;
+    padding: 20px;
+}
+.footer>ul>li{
+   
+    margin-bottom: 12px;
+    font-size: 12px;
+     
+}
+.footer>ul>li>h5{
+    font-size: 14px;
+    color: grey;
+    font-weight: 600;
+}
+hr{
+    width: 80%;
+    margin-top: 10px;
+   margin-left:10%;
+}
+.f-line>p{
+    margin-left: 465px;
+    font-size: 0.8em;
+    color: rgb(148, 148, 148);
+   
+}
+.footer-menu>ol{
+  list-style: none;
+  margin-left:250px ;
+  margin-right: 150px;
+  font-size: 0.8em;
+  color: rgb(148, 148, 148);
+}
+.footer-menu>ol>li{
+    display: inline;
+    padding-left: 30px;
+}
+.footer-menu{
+    margin-left: 10px;
+}
+.paragraph{
+    margin-left:210px ;
+    margin-right: 210px;
+    font-size: 0.9em;
+}
+  
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .newsletter-container {
+        padding: 20px;
+    }
+
+    .newsletter-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-form input[type="email"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .subscribe-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

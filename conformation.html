@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="./conformation.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
+  </head>
+  <body>
+  
+    <header1></header1>
+    <div class="order-confirmation-container">
+        <h1>Thank you for your order!</h1>
+
+        <!-- Order Summary Section -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <p><strong>Order ID:</strong> #123456</p>
+            <p><strong>Order Date:</strong> February 10, 2024</p>
+
+            <!-- Item Summary -->
+            <div class="item-summary">
+                <h3>Items:</h3>
+                <ul>
+                    <li>Product 1 - $50.00</li>
+                    <li>Product 2 - $30.00</li>
+                    <li>Product 3 - $40.00</li>
+                </ul>
+                <p><strong>Total Amount:</strong> $120.00</p>
+            </div>
+        </div>
+
+        <!-- Expected Delivery Section -->
+        <div class="delivery-info">
+            <h2>Expected Delivery Date</h2>
+            <p>Your order is expected to arrive by <strong>February 15, 2024</strong>.</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="order-actions">
+            <a href="./track.html" class="download-invoice-btn" >Track Your order</a>
+            <a href="invoice.pdf" class="download-invoice-btn" download>Download Invoice</a>
+        </div>
+    </div>
+    <footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription</title>
+    <link rel="stylesheet" href="./newletter.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
+</head>
+<body>
+  
+    <header1></header1>
+    <div class="newsletter-container">
+        <h1>Subscribe to Our Newsletter</h1>
+        <p>Get the latest updates on new products, discounts, and offers straight to your inbox!</p>
+        
+        <!-- Newsletter Subscription Form -->
+        <form class="newsletter-form" action="#" method="post">
+            <label for="email">Enter your email address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        
+        <p class="privacy-note">We respect your privacy. Unsubscribe at any time.</p>
+    </div>
+    <footer></footer>
+</body>
+</html>
