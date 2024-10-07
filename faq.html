@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Frequently Asked Questions</title>
+    <link rel="stylesheet" href="./faq.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header1').load('navbar1.html');   // Fetch and insert header.html
+            $('footer').load('footer.html');   // Fetch and insert footer.html
+        });
+    </script>
+  </head>
+  <body>
+  
+    <header1></header1>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <section>
+            <h2>For Buyers</h2>
+            <div class="faq-item">
+                <h3>How do I track my order?</h3>
+                <p>You can track your order by visiting the 'Track Order' section in your account and entering your order ID.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I return an item?</h3>
+                <p>You can initiate a return by going to the 'Order History' section and selecting the 'Return' option for your order.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>For Vendors</h2>
+            <div class="faq-item">
+                <h3>How do I list products?</h3>
+                <p>Log into your vendor account, and under 'Product Management', click on 'Add New Product' to start listing items.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I receive payments?</h3>
+                <p>Payments are directly transferred to your linked bank account within 5-7 business days after the sale is completed.</p>
+            </div>
+        </section>
+    </div>
+    <footer></footer>
+</body>
+</html>
