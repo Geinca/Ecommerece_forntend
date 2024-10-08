@@ -77,3 +77,10 @@ btn1[0].addEventListener("click",function(){
     window.location.assign("./address.html")
 
 })
+
+const svg = document.getElementsByClassName('bi-heart-fill')
+svg[0].addEventListener("click",function(){
+    svg[0].style.color='red'
+})
+
+

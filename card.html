@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,82 +8,104 @@
     <link rel="stylesheet" href="./card.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('header1').load('navbar1.html');   // Fetch and insert header.html
             $('footer').load('footer.html');   // Fetch and insert footer.html
         });
     </script>
 </head>
+
 <body>
-  
+
     <header1></header1>
 
 
     <section class="products-section">
         <!-- Filter and Sort Section -->
         <!-- <div class="filters"> -->
-           
-                <!-- <label for="sort">Sort by:</label> -->
 
-                <div class="product-container">
-                    <div class="product-image">
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmHX75InPl-DnriSlyZvp7ea31hBONeNygOw&s" alt="kurti">
-                    </div>
-                    
-                    <div class="product-details">
-                      <h1>kurti</h1>
-                      <p>Chic and Comfortable Fashion for Any Occasion</p>
-                      <div class="price">
-                        <span class="current-price">₹374</span>
-                        <span class="original-price">₹392</span>
-                        <span class="discount">5% off</span>
-                      </div>
-                      <div class="rating">
-                        <span class="rating-value">4.2 ★</span>
-                        <span class="ratings">218 Ratings</span>
-                        <span class="reviews">83 Reviews</span>
-                      </div>
-                      
-                      <div class="size-selection">
-                        <h3>Select Size</h3>
-                        <p>Free Size</p>
-                      </div>
-                      
-                      <div class="product-description">
-                        <h3>Product Details</h3>
-                        <p>Fabric: Art Silk</p>
-                        <p>Sleeve Length: Sleeveless</p>
-                        <p>Pattern: Printed</p>
-                        <p>Net Quantity (N): 1</p>
-                      </div>
-                      
-                      <div class="action-buttons">
-                        <button class="add-to-cart">Add to Cart</button>
-                        <button class="buy-now">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
-                    <div id="sort">
-                        <h2>Similar product</h2>
-                        <div class="images">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s" alt="">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s" alt="">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s" alt="">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s" alt="">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s" alt="">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s" alt="">
+        <!-- <label for="sort">Sort by:</label> -->
 
-                        </div>
-                    </div>
-           
+        <div class="product-container">
+            <div class="product-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmHX75InPl-DnriSlyZvp7ea31hBONeNygOw&s"
+                    alt="kurti">
+            </div>
 
-            
+            <div class="product-details">
+                <h1>kurti</h1>
+                <p>Chic and Comfortable Fashion for Any Occasion</p>
+                <div class="price">
+                    <span class="current-price">₹374</span>
+                    <span class="original-price">₹392</span>
+                    <span class="discount">5% off</span>
+                </div>
+                <div class="rating">
+                    <span class="rating-value">4.2 ★</span>
+                    <span class="ratings">218 Ratings</span>
+                    <span class="reviews">83 Reviews</span>
+                </div>
+
+                <div class="size-selection">
+                    <h3>Select Size</h3>
+                    <p>Free Size</p>
+                </div>
+
+                <div class="product-description">
+                    <h3>Product Details</h3>
+                    <p>Fabric: Art Silk</p>
+                    <p>Sleeve Length: Sleeveless</p>
+                    <p>Pattern: Printed</p>
+                    <p>Net Quantity (N): 1</p>
+                </div>
+
+                <div class="svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                      </svg>
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                        class="bi bi-share" viewBox="0 0 16 16">
+                        <path
+                            d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
+                    </svg>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="sort">
+            <h2>Similar product</h2>
+            <div class="images">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s"
+                    alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s"
+                    alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s"
+                    alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s"
+                    alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s"
+                    alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh8Mfy_nEmPPdq8Uc8n8YbOIkprBkJ7Szdg&s"
+                    alt="">
+
+            </div>
+        </div>
+
+
+
         <!-- </div> -->
 
         <!-- Products List -->
         <div class="products-list">
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Extension Board">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Extension Board">
                 <p class="product-title">Useful Extension Boards</p>
                 <p class="product-price">₹144</p>
                 <p class="free-delivery">Free Delivery</p>
@@ -93,7 +116,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Pants">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Pants">
                 <p class="product-title">Fashionable Glamorous Pants</p>
                 <p class="product-price">₹195</p>
                 <p class="free-delivery">Free Delivery</p>
@@ -104,7 +128,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Shower Head">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Shower Head">
                 <p class="product-title">Classy Head Showers (With Swivel)</p>
                 <p class="product-price">₹96</p>
                 <p class="free-delivery">Free Delivery</p>
@@ -115,7 +140,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Women Pants">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Women Pants">
                 <p class="product-title">Fancy Fashionista Women Pants</p>
                 <p class="product-price">₹283</p>
                 <p class="free-delivery">Free Delivery</p>
@@ -127,7 +153,8 @@
 
             <!-- Additional Products -->
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Chitrarekha Superior Saree">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Chitrarekha Superior Saree">
                 <p class="product-title">Chitrarekha Superior Saree</p>
                 <p class="product-price">₹266 <span class="discount">10% off</span></p>
                 <p class="free-delivery">Free Delivery</p>
@@ -138,7 +165,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Princess Fusion Jewellery Set">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Princess Fusion Jewellery Set">
                 <p class="product-title">Princess Fusion Jewellery Set</p>
                 <p class="product-price">₹217</p>
                 <p class="free-delivery">Free Delivery</p>
@@ -149,7 +177,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Everteen Period Care">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Everteen Period Care">
                 <p class="product-title">Everteen Period Care</p>
                 <p class="product-price">₹341 <span class="discount">57% off</span></p>
                 <p class="free-delivery">Free Delivery</p>
@@ -160,7 +189,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Trendy Sensational Women Tops">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Trendy Sensational Women Tops">
                 <p class="product-title">Trendy Sensational Women Tops</p>
                 <p class="product-price">₹120</p>
                 <p class="free-delivery">Free Delivery</p>
@@ -171,7 +201,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Chitrarekha Superior Saree">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Chitrarekha Superior Saree">
                 <p class="product-title">Chitrarekha Superior Saree</p>
                 <p class="product-price">₹266 <span class="discount">10% off</span></p>
                 <p class="free-delivery">Free Delivery</p>
@@ -182,7 +213,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Princess Fusion Jewellery Set">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Princess Fusion Jewellery Set">
                 <p class="product-title">Princess Fusion Jewellery Set</p>
                 <p class="product-price">₹217</p>
                 <p class="free-delivery">Free Delivery</p>
@@ -193,7 +225,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Everteen Period Care">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Everteen Period Care">
                 <p class="product-title">Everteen Period Care</p>
                 <p class="product-price">₹341 <span class="discount">57% off</span></p>
                 <p class="free-delivery">Free Delivery</p>
@@ -204,7 +237,8 @@
             </div>
 
             <div class="product-card">
-                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318" alt="Trendy Sensational Women Tops">
+                <img src="https://www.themancompany.com/cdn/shop/files/30-day-groomingkit-Primary-Images.jpg?v=1686808318"
+                    alt="Trendy Sensational Women Tops">
                 <p class="product-title">Trendy Sensational Women Tops</p>
                 <p class="product-price">₹120</p>
                 <p class="free-delivery">Free Delivery</p>
@@ -217,12 +251,13 @@
 
 
         </div>
-        
+
     </section>
 
 
     <footer></footer>
-    
+
     <script src="./script.js"></script>
 </body>
+
 </html>

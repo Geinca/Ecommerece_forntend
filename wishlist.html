@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +8,148 @@
     <link rel="stylesheet" href="./wishlist.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('header1').load('navbar1.html');   // Fetch and insert header.html
             $('footer').load('footer.html');   // Fetch and insert footer.html
         });
     </script>
-  </head>
-  <body>
-  
+</head>
+
+<body>
+
     <header1></header1>
-    <div class="wishlist-container">
-        <h1>My Wishlist</h1>
-        
-        <div class="wishlist-item">
-            <img src="product1.jpg" alt="Product 1">
-            <div class="wishlist-details">
-                <h2>Product Name 1</h2>
-                <p>$49.99</p>
-                <div class="wishlist-buttons">
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                    <button class="remove-btn">Remove</button>
-                </div>
+    <h1>My Wishlist</h1>
+
+   
+
+    <div class="products-list">
+        <div class="product-card">
+            <img src="https://www.orra.co.in/media/catalog/product/cache/f863675abff2fd3fa792fa24743dba0a/o/s/osn23050.jpg" alt="Extension Board">
+            <p class="product-title">Useful Extension Boards</p>
+            <p class="product-price">₹144</p>
+            <p class="free-delivery">Free Delivery</p>
+            <div class="reviews">
+                <span class="rating">3.7 ★</span>
+                <span>106857 Reviews</span>
             </div>
-        </div>
-        
-        <div class="wishlist-item">
-            <img src="product2.jpg" alt="Product 2">
-            <div class="wishlist-details">
-                <h2>Product Name 2</h2>
-                <p>$99.99</p>
-                <div class="wishlist-buttons">
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                    <button class="remove-btn">Remove</button>
-                </div>
+            <div class="wishlist-buttons">
+                <button class="add-to-cart-btn"><a href="./addtocard.html">Add to Cart</a></button>
+                <button class="remove-btn">Remove</button>
             </div>
         </div>
 
-        <div class="wishlist-item">
-            <img src="product3.jpg" alt="Product 3">
-            <div class="wishlist-details">
-                <h2>Product Name 3</h2>
-                <p>$75.99</p>
-                <div class="wishlist-buttons">
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                    <button class="remove-btn">Remove</button>
-                </div>
+        <div class="product-card">
+            <img src="https://www.orra.co.in/media/catalog/product/cache/f863675abff2fd3fa792fa24743dba0a/o/s/osn23050.jpg" alt="Pants">
+            <p class="product-title">Fashionable Glamorous Pants</p>
+            <p class="product-price">₹195</p>
+            <p class="free-delivery">Free Delivery</p>
+            <div class="reviews">
+                <span class="rating">3.9 ★</span>
+                <span>35472 Reviews</span>
+            </div>
+            <div class="wishlist-buttons">
+                <button class="add-to-cart-btn"><a href="./addtocard.html">Add to Cart</a></button>
+                <button class="remove-btn">Remove</button>
             </div>
         </div>
+
+        <div class="product-card">
+            <img src="https://www.orra.co.in/media/catalog/product/cache/f863675abff2fd3fa792fa24743dba0a/o/s/osn23050.jpg" alt="Shower Head">
+            <p class="product-title">Classy Head Showers (With Swivel)</p>
+            <p class="product-price">₹96</p>
+            <p class="free-delivery">Free Delivery</p>
+            <div class="reviews">
+                <span class="rating">3.8 ★</span>
+                <span>60972 Reviews</span>
+            </div>
+            <div class="wishlist-buttons">
+                <button class="add-to-cart-btn"><a href="./addtocard.html">Add to Cart</a></button>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.orra.co.in/media/catalog/product/cache/f863675abff2fd3fa792fa24743dba0a/o/s/osn23050.jpg" alt="Women Pants">
+            <p class="product-title">Fancy Fashionista Women Pants</p>
+            <p class="product-price">₹283</p>
+            <p class="free-delivery">Free Delivery</p>
+            <div class="reviews">
+                <span class="rating">3.7 ★</span>
+                <span>17562 Reviews</span>
+            </div>
+            <div class="wishlist-buttons">
+                <button class="add-to-cart-btn"><a href="./addtocard.html">Add to Cart</a></button>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="products-list">
+        <div class="product-card">
+            <img src="https://www.orra.co.in/media/catalog/product/cache/f863675abff2fd3fa792fa24743dba0a/o/s/osn23050.jpg" alt="Extension Board">
+            <p class="product-title">Useful Extension Boards</p>
+            <p class="product-price">₹144</p>
+            <p class="free-delivery">Free Delivery</p>
+            <div class="reviews">
+                <span class="rating">3.7 ★</span>
+                <span>106857 Reviews</span>
+            </div>
+            <div class="wishlist-buttons">
+                <button class="add-to-cart-btn"><a href="./addtocard.html">Add to Cart</a></button>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.orra.co.in/media/catalog/product/cache/f863675abff2fd3fa792fa24743dba0a/o/s/osn23050.jpg" alt="Pants">
+            <p class="product-title">Fashionable Glamorous Pants</p>
+            <p class="product-price">₹195</p>
+            <p class="free-delivery">Free Delivery</p>
+            <div class="reviews">
+                <span class="rating">3.9 ★</span>
+                <span>35472 Reviews</span>
+            </div>
+            <div class="wishlist-buttons">
+                <button class="add-to-cart-btn"><a href="./addtocard.html">Add to Cart</a></button>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.orra.co.in/media/catalog/product/cache/f863675abff2fd3fa792fa24743dba0a/o/s/osn23050.jpg" alt="Shower Head">
+            <p class="product-title">Classy Head Showers (With Swivel)</p>
+            <p class="product-price">₹96</p>
+            <p class="free-delivery">Free Delivery</p>
+            <div class="reviews">
+                <span class="rating">3.8 ★</span>
+                <span>60972 Reviews</span>
+            </div>
+            <div class="wishlist-buttons">
+                <button class="add-to-cart-btn"><a href="./addtocard.html">Add to Cart</a></button>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.orra.co.in/media/catalog/product/cache/f863675abff2fd3fa792fa24743dba0a/o/s/osn23050.jpg" alt="Women Pants">
+            <p class="product-title">Fancy Fashionista Women Pants</p>
+            <p class="product-price">₹283</p>
+            <p class="free-delivery">Free Delivery</p>
+            <div class="reviews">
+                <span class="rating">3.7 ★</span>
+                <span>17562 Reviews</span>
+            </div>
+            <div class="wishlist-buttons">
+                <button class="add-to-cart-btn"><a href="./addtocard.html">Add to Cart</a></button>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        
     </div>
     <footer></footer>
+    <script src="./script.js"></script>
 </body>
+
 </html>

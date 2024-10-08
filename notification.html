@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,32 @@
     <link rel="stylesheet" href="./notification.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('header1').load('navbar1.html');   // Fetch and insert header.html
             $('footer').load('footer.html');   // Fetch and insert footer.html
         });
     </script>
-  </head>
-  <body>
-  
+</head>
+
+<body>
+
     <header1></header1>
-      
+
+    <div class="no-notification">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOnM-bDOyf_q5kne8HXQP7SZDyckcIuSi8AA&s" alt="">
+
+        <h4>No new notification</h4>
+        <p>Stay in touch! You will find all the new updates here</p>
+        <button><a href="./index.html">View Products</a></button>
+    </div>
+
     <div class="notifications-container">
         <h1>Notifications</h1>
 
         <!-- Notification for Orders -->
         <div class="notification order">
             <h2>Order Update</h2>
-            <p>Your order <strong>#123456</strong> has been shipped. <a href="#">Track your order</a>.</p>
+            <p>Your order <strong>#123456</strong> has been shipped. <a href="./track.html">Track your order</a>.</p>
             <span class="notification-date">October 2, 2024</span>
         </div>
 
@@ -37,17 +47,20 @@
         <!-- Notification for Promotions -->
         <div class="notification promotion">
             <h2>Exclusive Promotion</h2>
-            <p>Join our membership program and earn double rewards points for every purchase. <a href="#">Learn more</a>.</p>
+            <p>Join our membership program and earn double rewards points for every purchase. <a href="#">Learn
+                    more</a>.</p>
             <span class="notification-date">September 29, 2024</span>
         </div>
 
         <!-- Notification for Miscellaneous -->
         <div class="notification general">
             <h2>New Features Available</h2>
-            <p>Check out the new features we’ve added to enhance your shopping experience. <a href="#">Explore now</a>.</p>
+            <p>Check out the new features we’ve added to enhance your shopping experience. <a href="#">Explore now</a>.
+            </p>
             <span class="notification-date">September 25, 2024</span>
         </div>
     </div>
     <footer></footer>
 </body>
+
 </html>
